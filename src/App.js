@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { ThemeProvider } from './providers/ThemeProvider';
+import Button from './components/Button';
+
+import { LightTheme } from './themes/light';
+import { DarkTheme } from './themes/dark';
+
+const map = {
+  light: LightTheme,
+  dark: DarkTheme
+};
 
 function App() {
+  const [theme, setTheme] = useState('light');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={map[theme]}>
+      <Button>Click Me!</Button>
+      <div>
+        <select onChange={e => setTheme(e.target.value)} value={theme}>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+    </ThemeProvider>
   );
 }
 
