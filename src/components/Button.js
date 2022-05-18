@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 
-import { COLORS } from '../themes/constants';
+import { getThemeVal } from 'utils/theme';
 
 const StyledButton = styled.button`
-  background: ${COLORS.PRIMARY};
-  color: ${COLORS.SECONDARY};
+  background: ${getThemeVal('colors.secondary.500')};
+  color: ${getThemeVal('colors.primary.500')};
   padding: 15px;
   border-radius: 5px;
   cursor: pointer;
 `;
 
-export default function Button({ children, onClick }) {
+export default function Button({ children, ...rest }) {
   return (
-    <StyledButton onClick={onClick}>
+    <StyledButton {...rest}>
       {children}
     </StyledButton>
   );
