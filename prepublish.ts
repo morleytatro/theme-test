@@ -26,8 +26,8 @@ function getPaths(theme, current = [], paths = []) {
 fs.writeFileSync(
   __dirname + '/src/utils/types.ts',
   comment + '\n\n'
-    + 'export type Path =\n'
+    + 'export type ThemeValPath =\n'
     + getPaths(defaultTheme, [], [])
       .map(path => `  | '${path}'`)
-      .join('\n')
+      .join('\n') + ';'
 );
