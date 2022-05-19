@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { getThemeVal } from 'utils/theme';
 
 const StyledButton = styled.button`
-  background: ${getThemeVal('colors.secondary.500')};
-  color: ${getThemeVal('colors.primary.500')};
+  background: ${getThemeVal('colors_secondary_500')};
+  color: ${getThemeVal('colors_primary_500')};
   padding: 15px;
   border-radius: 5px;
   cursor: pointer;

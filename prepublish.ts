@@ -12,7 +12,7 @@ const comment = [
 
 function getPaths(theme, current = [], paths = []) {
   if(typeof theme === 'string' || typeof theme === 'number') {
-    paths.push(current.join('.'));
+    paths.push(current.join('_'));
     return paths;
   }
 
