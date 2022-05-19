@@ -5,4 +5,4 @@ export { mergeDeepRight as merge } from 'ramda';
 type ThemeVal = string | number;
 
 export const getThemeVal = (path: ThemeValPath): ThemeVal =>
-  view(lensPath(['theme', ...path.split('.')]))
+  view(lensPath(['theme', ...path.split('_')]))
