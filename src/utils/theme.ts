@@ -2,10 +2,7 @@ import type { ThemeValPath } from './types';
 import { lensPath, view } from 'ramda';
 export { mergeDeepRight as merge } from 'ramda';
 
-export function getThemeVal(path: ThemeValPath) {
-  return props =>
-    view(
-      lensPath(['theme', ...path.split('.')]),
-      props
-    );
-}
+type ThemeVal = string | number;
+
+export const getThemeVal = (path: ThemeValPath): ThemeVal =>
+  view(lensPath(['theme', ...path.split('.')]))
