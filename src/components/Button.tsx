@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-import { getThemeVal } from 'utils/theme';
+import { variable } from 'utils/theme';
 
 const StyledButton = styled.button`
-  background: ${getThemeVal('colors.secondary.500')};
-  color: ${getThemeVal('colors.primary.500')};
-  padding: calc(${getThemeVal('spacings.s')} * 2px);
+  background: ${variable('colors.secondary.500')};
+  color: ${variable('colors.primary.500')};
+  padding: calc(var(--spacings-s) * 2);
   border-radius: 5px;
   cursor: pointer;
 `;

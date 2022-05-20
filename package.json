@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "prepublish": "ts-node prepublish",
+    "prepublish": "ts-node generators/prepublish",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -1,4 +1,5 @@
-import { ThemeProvider } from 'styled-components';
+// import { ThemeProvider } from 'styled-components';
+import ThemeProvider from 'providers/ThemeProvider';
 
 import Button from './components/Button';
 

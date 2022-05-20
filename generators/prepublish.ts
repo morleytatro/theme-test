@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-import defaultTheme from './src/themes/default';
+import defaultTheme from '../src/themes/default';
 
 const comment = [
   '/** This is an auto-generated file',
@@ -24,7 +24,7 @@ function getPaths(theme, current = [], paths = []) {
 }
 
 fs.writeFileSync(
-  __dirname + '/src/utils/types.ts',
+  __dirname + '/../src/utils/types.ts',
   comment + '\n\n'
     + 'export type ThemeValPath =\n'
     + getPaths(defaultTheme, [], [])
