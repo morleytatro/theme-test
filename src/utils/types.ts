@@ -101,4 +101,14 @@ export type ThemeValPath =
   | 'colors.positive.650'
   | 'colors.positive.700'
   | 'colors.positive.750'
-  | 'colors.positive.800';
+  | 'colors.positive.800'
+  | 'spacings.x'
+  | 'spacings.s'
+  | 'spacings.m'
+  | 'spacings.l'
+  | 'spacings.xl'
+  | 'spacings.x2l'
+  | 'spacings.x3l'
+  | 'spacings.x4l'
+  | 'spacings.x5l'
+  | 'spacings.x6l';

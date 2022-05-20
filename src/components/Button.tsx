@@ -5,7 +5,7 @@ import { getThemeVal } from 'utils/theme';
 const StyledButton = styled.button`
   background: ${getThemeVal('colors.secondary.500')};
   color: ${getThemeVal('colors.primary.500')};
-  padding: 15px;
+  padding: calc(${getThemeVal('spacings.s')} * 2px);
   border-radius: 5px;
   cursor: pointer;
 `;

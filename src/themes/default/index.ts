@@ -1,7 +1,9 @@
 import colors from './colors';
+import spacings from './spacings';
 
 const defaultTheme = {
-  colors
+  colors,
+  spacings
 };
 
 export default defaultTheme;
