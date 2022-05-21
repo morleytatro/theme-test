@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-import { variable } from 'utils/theme';
+import { cssVar } from 'utils/theme';
 
 const StyledButton = styled.button`
-  background: ${variable('colors.secondary.500')};
-  color: ${variable('colors.primary.500')};
+  background: ${cssVar('colors.secondary.500')};
+  color: ${cssVar('colors.primary.500')};
   padding: calc(var(--spacings-s) * 2);
   border-radius: 5px;
   cursor: pointer;
