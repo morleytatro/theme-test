@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider as StyledThemeProvider } from 'styled-components';
 
 import { getVariables } from 'utils/variables';
 
@@ -8,7 +8,9 @@ export default function ThemeProvider({ children, theme }) {
   return (
     <>
       <GlobalStyles />
-      {children}
+      <StyledThemeProvider theme={theme}>
+        {children}
+      </StyledThemeProvider>
     </>
   );
 }

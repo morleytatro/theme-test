@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-import { cssVar } from 'utils/theme';
+import { cssVar, themeVal } from 'utils/theme';
 
 const StyledButton = styled.button`
-  background: ${cssVar('colors.secondary.500')};
+  background: ${themeVal('colors.secondary.500')};
   color: ${cssVar('colors.primary.500')};
   padding: calc(var(--spacings-s) * 2);
   border-radius: 5px;

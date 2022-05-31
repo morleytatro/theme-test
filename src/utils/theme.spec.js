@@ -1,8 +1,8 @@
-import { getThemeVal } from './theme';
+import { themeVal } from './theme';
 
-describe('getThemeVal', () => {
+describe('themeVal', () => {
   test('creates a function to get a deep theme value', () => {
-    const func = getThemeVal('colors.primary.500');
+    const func = themeVal('colors.primary.500');
 
     expect(func({
       theme: {
