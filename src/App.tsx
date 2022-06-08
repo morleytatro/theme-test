@@ -14,6 +14,22 @@ const theme = merge(defaultTheme, {
   }
 });
 
+// const themeFromScratch = {
+//   colors: {
+//     primary: {
+//       50: 'blue',
+//       500: 'red',
+//       // ...
+//     },
+//   },
+//   spacings: {
+//     x: '.25rem',
+//     s: '.5rem',
+//     m: '.75rem',
+//     l: '1rem',
+//   }
+// };
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
